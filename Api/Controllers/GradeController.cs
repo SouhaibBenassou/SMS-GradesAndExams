@@ -6,5 +6,6 @@ namespace Api.Controllers
     [ApiController]
     public class GradeController : ControllerBase
     {
+
     }
 }

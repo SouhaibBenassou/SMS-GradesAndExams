@@ -1,7 +1,9 @@
-﻿namespace Application.Interfaces
+﻿using Application.IServices;
+
+namespace Application.Interfaces
 {
     public interface IUnitOfService
     {
-        //IGradeService GradesService { get; }
+        IGradeService GradeService { get; }
     }
 }
