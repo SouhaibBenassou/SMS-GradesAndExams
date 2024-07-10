@@ -1,35 +1,56 @@
-﻿using Application.IRepository;
-using Infrastructure.Data;
-using Microsoft.EntityFrameworkCore;
+﻿using Infrastructure.Data;
 
 namespace Infrastracture.Repositories
 {
     public class AsyncRepository<T> : IAsyncRepository<T> where T : class
     {
+        #region Props
         private readonly ApplicationDbContext _db;
-        internal DbSet<T> DbSet;
-        public AsyncRepository(ApplicationDbContext db) {
+        internal DbSet<T> dbSet;
+        #endregion
+        #region Constructor
+        public AsyncRepository(AppDbContext db)
+        {
             _db = db;
-            this.DbSet = db.Set<T>();
+            dbSet = db.Set<T>();
         }
-        Task<T> IAsyncRepository<T>.AddAsync(T entity) {
-            throw new NotImplementedException();
+        #endregion
+        #region Methods
+        public IQueryable<T> GetAsNoTracking()
+        {
+            return dbSet.AsNoTracking();
         }
-
-        Task IAsyncRepository<T>.DeleteAsync(T entity) {
-            throw new NotImplementedException();
+        public IQueryable<T> GetAsTracking()
+        {
+            return dbSet.AsTracking();
         }
-
-        Task<T> IAsyncRepository<T>.GetByIdAsync(Guid id) {
-            throw new NotImplementedException();
+        public async Task CreateRangeAsync(ICollection<T> entities)
+        {
+            await dbSet.AddRangeAsync(entities);
         }
-
-        Task<IReadOnlyList<T>> IAsyncRepository<T>.ListAllAsync() {
-            throw new NotImplementedException();
+        public async Task CreateAsync(T entity)
+        {
+            await dbSet.AddAsync(entity);
         }
-
-        Task IAsyncRepository<T>.UpdateAsync(T entity) {
-            throw new NotImplementedException();
+        public async Task<T> GetAsync(Expression<Func<T, bool>> filter = null)
+        {
+            IQueryable<T> query = dbSet;
+            if (filter != null)
+            {
+                query = query.Where(filter);
+            }
+            return await query.FirstOrDefaultAsync();
         }
+        public async Task UpdateAsync(T entity)
+        {
+            dbSet.Update(entity);
+        }
+        public async Task RemoveAsync(T entity)
+        {
+            dbSet.Remove(entity);
+        }
+        #endregion
     }
 }
+
+
