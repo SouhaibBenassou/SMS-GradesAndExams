@@ -3,20 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\examsandgrades\\application\\services\\unitofservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\services\\unitofservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Infrastracture\\Migrations\\20240710132433_Inite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastracture\\Migrations\\20240710132433_Inite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|c:\\users\\souhaib\\documents\\github\\examsandgrades\\api\\controllers\\gradecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|solutionrelative:api\\controllers\\gradecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|c:\\users\\souhaib\\documents\\github\\examsandgrades\\infrastracture\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|solutionrelative:infrastracture\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\examsandgrades\\application\\iservices\\igradeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\iservices\\igradeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Infrastracture\\Migrations\\20240710132234_hello.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastracture\\Migrations\\20240710132234_hello.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|c:\\users\\souhaib\\documents\\github\\examsandgrades\\api\\controllers\\fillieretempcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|solutionrelative:api\\controllers\\fillieretempcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|c:\\users\\souhaib\\documents\\github\\examsandgrades\\infrastracture\\repositories\\asyncrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|solutionrelative:infrastracture\\repositories\\asyncrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|c:\\users\\souhaib\\documents\\github\\examsandgrades\\infrastracture\\uow\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|solutionrelative:infrastracture\\uow\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|c:\\users\\souhaib\\documents\\github\\examsandgrades\\domain\\entities\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|c:\\users\\souhaib\\documents\\github\\examsandgrades\\domain\\entities\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|c:\\users\\souhaib\\documents\\github\\examsandgrades\\domain\\entities\\supervisor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\supervisor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|c:\\users\\souhaib\\documents\\github\\examsandgrades\\domain\\entities\\sessionsexam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\sessionsexam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|c:\\users\\souhaib\\documents\\github\\examsandgrades\\domain\\common\\auditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|solutionrelative:domain\\common\\auditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,63 +50,141 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IGradeService.cs",
-              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Application\\IServices\\IGradeService.cs",
-              "RelativeDocumentMoniker": "Application\\IServices\\IGradeService.cs",
-              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Application\\IServices\\IGradeService.cs",
-              "RelativeToolTip": "Application\\IServices\\IGradeService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAiAAAA",
+              "DocumentIndex": 0,
+              "Title": "20240710132433_Inite.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Infrastracture\\Migrations\\20240710132433_Inite.cs",
+              "RelativeDocumentMoniker": "Infrastracture\\Migrations\\20240710132433_Inite.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Infrastracture\\Migrations\\20240710132433_Inite.cs",
+              "RelativeToolTip": "Infrastracture\\Migrations\\20240710132433_Inite.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA4wB8AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T11:52:03.605Z",
+              "WhenOpened": "2024-07-10T13:24:34.122Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UnitOfService.cs",
-              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Application\\Services\\UnitOfService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\UnitOfService.cs",
-              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Application\\Services\\UnitOfService.cs",
-              "RelativeToolTip": "Application\\Services\\UnitOfService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAtAAAA",
+              "DocumentIndex": 2,
+              "Title": "20240710132234_hello.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Infrastracture\\Migrations\\20240710132234_hello.cs",
+              "RelativeDocumentMoniker": "Infrastracture\\Migrations\\20240710132234_hello.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Infrastracture\\Migrations\\20240710132234_hello.cs",
+              "RelativeToolTip": "Infrastracture\\Migrations\\20240710132234_hello.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T11:47:03.94Z",
+              "WhenOpened": "2024-07-10T13:22:34.87Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FilliereTempController.cs",
-              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Api\\Controllers\\FilliereTempController.cs",
-              "RelativeDocumentMoniker": "Api\\Controllers\\FilliereTempController.cs",
-              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Api\\Controllers\\FilliereTempController.cs",
-              "RelativeToolTip": "Api\\Controllers\\FilliereTempController.cs",
+              "Title": "AsyncRepository.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Infrastracture\\Repositories\\AsyncRepository.cs",
+              "RelativeDocumentMoniker": "Infrastracture\\Repositories\\AsyncRepository.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Infrastracture\\Repositories\\AsyncRepository.cs",
+              "RelativeToolTip": "Infrastracture\\Repositories\\AsyncRepository.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAmwCAAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T13:20:02.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Infrastracture\\UOW\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "Infrastracture\\UOW\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Infrastracture\\UOW\\UnitOfWork.cs",
+              "RelativeToolTip": "Infrastracture\\UOW\\UnitOfWork.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T11:40:44.1Z",
+              "WhenOpened": "2024-07-10T13:18:04.781Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GradeController.cs",
-              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Api\\Controllers\\GradeController.cs",
-              "RelativeDocumentMoniker": "Api\\Controllers\\GradeController.cs",
-              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Api\\Controllers\\GradeController.cs",
-              "RelativeToolTip": "Api\\Controllers\\GradeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Infrastracture\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Infrastracture\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Infrastracture\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Infrastracture\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAA5wAwAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T11:40:02.537Z",
+              "WhenOpened": "2024-07-10T13:14:53.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SessionsExam.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Domain\\Entities\\SessionsExam.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\SessionsExam.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Domain\\Entities\\SessionsExam.cs",
+              "RelativeToolTip": "Domain\\Entities\\SessionsExam.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T12:59:36.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Exam.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Domain\\Entities\\Exam.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Exam.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Domain\\Entities\\Exam.cs",
+              "RelativeToolTip": "Domain\\Entities\\Exam.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAIBBwBcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T12:16:10.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuditableEntity.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Domain\\Common\\AuditableEntity.cs",
+              "RelativeDocumentMoniker": "Domain\\Common\\AuditableEntity.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Domain\\Common\\AuditableEntity.cs",
+              "RelativeToolTip": "Domain\\Common\\AuditableEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T12:15:55.916Z",
               "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Supervisor.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Domain\\Entities\\Supervisor.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Supervisor.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Domain\\Entities\\Supervisor.cs",
+              "RelativeToolTip": "Domain\\Entities\\Supervisor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T12:12:13.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Room.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Domain\\Entities\\Room.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Room.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\ExamsAndGrades\\Domain\\Entities\\Room.cs",
+              "RelativeToolTip": "Domain\\Entities\\Room.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T12:11:44.221Z",
+              "EditorCaption": ""
             }
           ]
         }

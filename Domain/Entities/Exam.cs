@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Domain.Entities;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Domain;
 
@@ -9,9 +10,15 @@ public class Exam : AuditableEntity
     public DateOnly Date { get; set; }
     public Guid IdYear { get; set; }
     public ExamType ExamType { get; set; }
-    [ForeignKey("RoomTemp")]
-    public RoomTemp IdRoom { get; set; }
+
+    public Guid SessionsExamId { get; set; }
+    [ForeignKey("SessionsExamId")]
+    public SessionsExam SessionsExam { get; set; }
+
     public TimeOnly EndExam { get; set; }
     public StatusType Status { get; set; }
 
+    public Guid SupervisorId { get; set; }
+    [ForeignKey("SupervisorId")]
+    public Supervisor? Supervisor { get; set; }
 }
