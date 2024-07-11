@@ -17,4 +17,9 @@
       <PackageReference Include="RabbitMQ.Client" Version="7.0.0-rc.4" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Features\Exam\Command\Delete\" />
+      <Folder Include="Features\Exam\Command\Update\" />
+    </ItemGroup>
+
 </Project>

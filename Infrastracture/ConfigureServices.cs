@@ -18,6 +18,7 @@ namespace Infrastructure
             string? con = configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(con));
             //dependency injection contanaireS
+            services.AddScoped<IExamRepository, ExamRepository>();
             services.AddScoped<IGradeRepository, GradeRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             return services;

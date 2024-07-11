@@ -8,14 +8,15 @@ namespace Application.Services
     {
         private readonly IMapper _mapper;
         private readonly IUnitOfWork _uow;
-        public IGradeService gradeService { get; private set; }
 
-        public IGradeService GradeService => throw new NotImplementedException();
+        public IGradeService GradeService { get; set; }
+        public IExamService ExamService { get; set; }
 
-        public UnitOfService(IMapper mapper, IUnitOfWork uow, IGradeService gradeService) {
+        public UnitOfService(IMapper mapper, IUnitOfWork uow, IGradeService gradeService, IExamService examService) {
             _mapper = mapper;
             _uow = uow;
-            this.gradeService = gradeService;
+            GradeService = gradeService;
+            ExamService = examService;
         }
     }
 }

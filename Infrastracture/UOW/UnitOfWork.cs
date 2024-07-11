@@ -1,4 +1,5 @@
 ﻿using Application.Interfaces;
+using Application.IRepository;
 using Infrastructure.Data;
 namespace Infrastracture;
 
@@ -7,6 +8,11 @@ public class UnitOfWork(ApplicationDbContext db) : IUnitOfWork
 {
     private readonly ApplicationDbContext _db = db;
 
+    public IExamRepository ExamRepository { get; set; }
+
+    public UnitOfWork(ApplicationDbContext db, IExamRepository examRepository) : this(db) {
+        ExamRepository = examRepository;
+    }
 
     #region Methods
     public void Commit() {

@@ -1,6 +1,6 @@
 ﻿namespace Application.IServices
 {
-    public interface IGradeService
+    public interface IGradeService 
     {
 
     }

@@ -13,35 +13,21 @@ namespace Infrastructure.Data
         public DbSet<Supervisor> Supervisors { get; set; }
         public DbSet<Room> Rooms { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder) {
-            // Supervisor -> Exam
-            modelBuilder.Entity<Exam>()
-                .HasOne(e => e.Supervisor)
-                .WithMany()
-                .HasForeignKey(e => e.SupervisorId)
-                .OnDelete(DeleteBehavior.Restrict); // Prevent cascade delete
 
-            // Exam -> SessionsExam
             modelBuilder.Entity<Exam>()
                 .HasOne(e => e.SessionsExam)
-                .WithMany()
-                .HasForeignKey(e => e.SessionsExamId)
-                .OnDelete(DeleteBehavior.Restrict); // Prevent cascade delete
+                .WithOne(e => e.Exam)
+                .HasForeignKey<Exam>(e => e.SessionsExamId);
 
-            // Supervisor -> Room
-            modelBuilder.Entity<Supervisor>()
-                .HasOne(s => s.Room)
-                .WithMany()
-                .HasForeignKey(s => s.RoomId)
-                .OnDelete(DeleteBehavior.Restrict); // Prevent cascade delete
-
-            // SessionsExam -> Room
             modelBuilder.Entity<SessionsExam>()
-                .HasOne(se => se.Room)
-                .WithMany(r => r.SessionsExams)
-                .HasForeignKey(se => se.IdRoom)
-                .OnDelete(DeleteBehavior.Restrict); // Prevent cascade delete
+                .HasOne(e => e.Room)
+                .WithMany(e => e.SessionsExams)
+                .HasForeignKey(e => e.IdRoom);
+            modelBuilder.Entity<SessionsExam>()
+                .HasOne(e => e.Supervisor)
+                .WithMany(e => e.Sessions)
+                .HasForeignKey(e => e.IdSupervisor);
 
-            // Additional configurations if necessary
         }
     }
 }

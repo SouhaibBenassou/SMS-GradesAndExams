@@ -8,21 +8,48 @@ namespace Infrastracture.Repositories
     public class AsyncRepository<T> : IAsyncRepository<T> where T : class
     {
         #region Props
+
         private readonly ApplicationDbContext _db;
         internal DbSet<T> dbSet;
-        #endregion
-        #region Constructor
+
         public AsyncRepository(ApplicationDbContext db) {
             _db = db;
-            dbSet = db.Set<T>();
+            dbSet = _db.Set<T>();
         }
+
         #endregion
-        #region Methods
-        public IQueryable<T> GetAsNoTracking() {
-            return dbSet.AsNoTracking();
+        public async Task<List<T>> GetAllAsNoTracking(Expression<Func<T, bool>>? filter = null) {
+            IQueryable<T> query = dbSet.AsNoTracking();
+            if (filter != null)
+            {
+                query = query.Where(filter);
+            }
+            return await query.ToListAsync();
         }
-        public IQueryable<T> GetAsTracking() {
-            return dbSet.AsTracking();
+        public async Task<T> GetAsNoTracking(Expression<Func<T, bool>> filter = null) {
+            IQueryable<T> query = dbSet.AsNoTracking();
+            if (filter != null)
+            {
+                query = query.Where(filter);
+            }
+            return await query.FirstOrDefaultAsync();
+        }
+        public async Task<List<T>> GetAllAsTracking(Expression<Func<T, bool>>? filter = null) {
+            IQueryable<T> query = dbSet.AsTracking();
+            if (filter != null)
+            {
+                query = query.Where(filter);
+            }
+            return await query.ToListAsync();
+
+        }
+        public async Task<T> GetAsTracking(Expression<Func<T, bool>> filter = null) {
+            IQueryable<T> query = dbSet.AsTracking();
+            if (filter != null)
+            {
+                query = query.Where(filter);
+            }
+            return await query.FirstOrDefaultAsync();
         }
         public async Task CreateRangeAsync(ICollection<T> entities) {
             await dbSet.AddRangeAsync(entities);
@@ -44,8 +71,12 @@ namespace Infrastracture.Repositories
         public async Task RemoveAsync(T entity) {
             dbSet.Remove(entity);
         }
-        #endregion
     }
 }
+
+
+
+
+
 
 

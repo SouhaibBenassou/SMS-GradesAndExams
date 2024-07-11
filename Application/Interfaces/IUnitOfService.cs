@@ -4,6 +4,7 @@ namespace Application.Interfaces
 {
     public interface IUnitOfService
     {
-        IGradeService GradeService { get; }
+        IGradeService GradeService { get; set; }
+        IExamService ExamService { get; set; }
     }
 }

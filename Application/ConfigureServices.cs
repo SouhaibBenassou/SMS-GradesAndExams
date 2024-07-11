@@ -10,6 +10,7 @@ namespace Application
         public static IServiceCollection AddApplicationServices(this IServiceCollection services) {
 
             services.AddTransient<IGradeService, GradeService>();
+            services.AddScoped<IExamService, ExamService>();
 
             //configuration of mediator
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
