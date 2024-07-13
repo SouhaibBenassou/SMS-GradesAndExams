@@ -9,6 +9,7 @@ public class UnitOfWork(ApplicationDbContext db) : IUnitOfWork
     private readonly ApplicationDbContext _db = db;
 
     public IExamRepository ExamRepository { get; set; }
+    public ISupervisorRepository SupervisorRepository { get; set; }
 
     public UnitOfWork(ApplicationDbContext db, IExamRepository examRepository) : this(db) {
         ExamRepository = examRepository;

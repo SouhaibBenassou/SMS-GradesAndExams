@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastracture.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240710132433_Inite")]
-    partial class Inite
+    [Migration("20240712102223_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -47,6 +47,10 @@ namespace Infrastracture.Migrations
                     b.Property<DateTime?>("LastModifiedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("RoomType")
                         .HasColumnType("int");
 
@@ -67,9 +71,6 @@ namespace Infrastracture.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("ExamId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -84,18 +85,11 @@ namespace Infrastracture.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid?>("RoomId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ExamId");
-
-                    b.HasIndex("RoomId");
 
                     b.ToTable("Supervisors");
                 });
@@ -142,14 +136,10 @@ namespace Infrastracture.Migrations
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
-                    b.Property<Guid>("SupervisorId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("SessionsExamId");
-
-                    b.HasIndex("SupervisorId");
+                    b.HasIndex("SessionsExamId")
+                        .IsUnique();
 
                     b.ToTable("Exams");
                 });
@@ -195,14 +185,11 @@ namespace Infrastracture.Migrations
                     b.Property<TimeOnly>("Ends")
                         .HasColumnType("time");
 
-                    b.Property<Guid?>("ExamId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<Guid>("IdRoom")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
+                    b.Property<Guid>("IdSupervisor")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("LastModifiedBy")
                         .HasColumnType("nvarchar(max)");
@@ -215,70 +202,57 @@ namespace Infrastracture.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ExamId");
-
                     b.HasIndex("IdRoom");
 
+                    b.HasIndex("IdSupervisor");
+
                     b.ToTable("SessionsExams");
-                });
-
-            modelBuilder.Entity("Domain.Entities.Supervisor", b =>
-                {
-                    b.HasOne("Domain.Exam", "Exam")
-                        .WithMany()
-                        .HasForeignKey("ExamId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Domain.Entities.Room", "Room")
-                        .WithMany()
-                        .HasForeignKey("RoomId")
-                        .OnDelete(DeleteBehavior.Restrict);
-
-                    b.Navigation("Exam");
-
-                    b.Navigation("Room");
                 });
 
             modelBuilder.Entity("Domain.Exam", b =>
                 {
                     b.HasOne("Domain.SessionsExam", "SessionsExam")
-                        .WithMany()
-                        .HasForeignKey("SessionsExamId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("Domain.Entities.Supervisor", "Supervisor")
-                        .WithMany()
-                        .HasForeignKey("SupervisorId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .WithOne("Exam")
+                        .HasForeignKey("Domain.Exam", "SessionsExamId")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("SessionsExam");
-
-                    b.Navigation("Supervisor");
                 });
 
             modelBuilder.Entity("Domain.SessionsExam", b =>
                 {
-                    b.HasOne("Domain.Exam", "Exam")
-                        .WithMany()
-                        .HasForeignKey("ExamId");
-
                     b.HasOne("Domain.Entities.Room", "Room")
                         .WithMany("SessionsExams")
                         .HasForeignKey("IdRoom")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Exam");
+                    b.HasOne("Domain.Entities.Supervisor", "Supervisor")
+                        .WithMany("Sessions")
+                        .HasForeignKey("IdSupervisor")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Room");
+
+                    b.Navigation("Supervisor");
                 });
 
             modelBuilder.Entity("Domain.Entities.Room", b =>
                 {
                     b.Navigation("SessionsExams");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Supervisor", b =>
+                {
+                    b.Navigation("Sessions");
+                });
+
+            modelBuilder.Entity("Domain.SessionsExam", b =>
+                {
+                    b.Navigation("Exam")
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }
